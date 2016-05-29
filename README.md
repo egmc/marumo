@@ -165,6 +165,8 @@ exports.handler = function(event, context) {
 ↑を叩くためのapi gatewayを作成
 api gatewayを経由してパラメータを渡す
 
+![5](5.png)
+
 coop-sender/index.js
 ```js
 'use strict';
