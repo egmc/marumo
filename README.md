@@ -165,6 +165,10 @@ exports.handler = function(event, context) {
 ↑を叩くためのapi gatewayを作成
 api gatewayを経由してパラメータを渡す
 
+```sh
+curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"to": "u6f27bae0d2XXXXXXXXXXXXXXXXXXXXXX", "text":"あああ"} https://tkgiqnzhs2.execute-api.ap-northeast-1.amazonaws.com/production
+```
+
 ![5](5.png)
 
 coop-sender/index.js
