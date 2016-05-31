@@ -10,7 +10,7 @@ TL;DR
   - ua出す
  - [done]botをキックする奴
   - [done]apigateway
-  - `curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"to": "u6f27bae0d2XXXXXXXXXXXXXXXXXXXXXX", "text":"あああ"} https://tkgiqnzhs2.execute-api.ap-northeast-1.amazonaws.com/production`
+  - `curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"to": "u6f27bae0d2XXXXXXXXXXXXXXXXXXXXXX", "text":"あああ"} https://xxxxxxxxx.execute-api.ap-northeast-1.amazonaws.com/production`
   - [done]雑にリクエスト投げるらむだ
  - ついでに色々試す ip、スペック調査など
   - [done]globalip -> 3時間くらいでかわる
@@ -144,7 +144,7 @@ exports.handler = function(event, context) {
 
     var request = require('request');
 
-    var endPoint = 'https://ssl.eg2mix.com/callback.php';
+    var endPoint = 'https://xxxxxxx.com/callback.php';
 
     console.log(JSON.stringify(event));
 
@@ -170,7 +170,7 @@ exports.handler = function(event, context) {
 api gatewayを経由してパラメータを渡す
 
 ```sh
-curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"to": "u6f27bae0d2XXXXXXXXXXXXXXXXXXXXXX", "text":"あああ"} https://tkgiqnzhs2.execute-api.ap-northeast-1.amazonaws.com/production
+curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"to": "u6f27bae0d2XXXXXXXXXXXXXXXXXXXXXX", "text":"あああ"} https://xxxxxxxx.execute-api.ap-northeast-1.amazonaws.com/production
 ```
 
 ![5](5.png)
@@ -184,7 +184,7 @@ exports.handler = function(event, context) {
     var request = require('request');
 
     // api gateway endpoint
-    var endPoint = 'https://tkgiqnzhs2.execute-api.ap-northeast-1.amazonaws.com/production';
+    var endPoint = 'https://xxxxxxxx.execute-api.ap-northeast-1.amazonaws.com/production';
 
     console.log(JSON.stringify(event));
 
