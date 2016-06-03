@@ -198,7 +198,7 @@ exports.handler = function(event, context) {
             "text": "こーぷ"
         },
         {
-            "to": "u8f0351XXXXXXXXXXXXXXXXXXXXXXXXXX",  //tomo
+            "to": "u8f0351XXXXXXXXXXXXXXXXXXXXXXXXXX",  //w
             "text": "say 今週のコープさんをお知らせします"
         },
         {
